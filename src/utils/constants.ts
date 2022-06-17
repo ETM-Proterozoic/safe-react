@@ -47,4 +47,4 @@ const isProdGateway = () => {
 console.log(process.env);
 export const GATEWAY_URL =
   process.env.REACT_APP_GATEWAY_URL ||
-  (IS_PRODUCTION || isProdGateway() ? 'https://safe.etm.network' : 'https://safe.etm.network')
+  (IS_PRODUCTION || isProdGateway() ? 'https://safe-api.etm.network' : 'https://safe-api.etm.network')
