@@ -1,4 +1,4 @@
-import { getSafeSingletonDeployment, getMultiSendCallOnlyDeployment } from '@gnosis.pm/safe-deployments'
+import { getSafeSingletonDeployment, getMultiSendCallOnlyDeployment } from '@etmp/safe-deployments'
 import { AbiItem } from 'web3-utils'
 import Web3 from 'web3'
 

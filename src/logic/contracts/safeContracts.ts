@@ -6,7 +6,7 @@ import {
   getFallbackHandlerDeployment,
   getMultiSendCallOnlyDeployment,
   getSignMessageLibDeployment,
-} from '@gnosis.pm/safe-deployments'
+} from '@etmp/safe-deployments'
 import Web3 from 'web3'
 import { AbiItem } from 'web3-utils'
 
