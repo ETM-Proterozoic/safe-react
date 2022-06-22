@@ -1803,10 +1803,10 @@
     "@ethersproject/properties" "^5.5.0"
     "@ethersproject/strings" "^5.5.0"
 
-"@etmp/safe-deployments@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@etmp/safe-deployments/-/safe-deployments-1.0.0.tgz#d136c04a4d2b441878ab3c694f74aabfb762a1bb"
-  integrity sha512-f8hlml7ree81iBMyfGwMoFHXqmjNVUrINYwsfYbpKWaJ5Cy133FCJWuSC5c5x14rGRFtzZib5M4Lj/i+RzzbZg==
+"@etmp/safe-deployments@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@etmp/safe-deployments/-/safe-deployments-1.0.1.tgz#3edd3b269b4784e0f1e42d1d67513d5b41b145bf"
+  integrity sha512-BfTPnecpKdq2FxNJwqOrWX9FgGm5D0HAY3l0EvJbJWacFfUKL9ITtCVFmYhXdG2SMMuweUkGXIcH/JFrtRPQNw==
   dependencies:
     semver "^7.3.7"
 
