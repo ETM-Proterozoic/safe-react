@@ -32,7 +32,7 @@ const NoTransactionGuardLegend = (): ReactElement => (
   </InfoText>
 )
 
-const DOCS_LINK = 'https://docs.gnosis-safe.io/contracts/modules-1'
+const DOCS_LINK = 'https://safe.etm.network/contracts/modules-1'
 
 const Advanced = (): ReactElement => {
   const classes = useStyles()
@@ -85,7 +85,7 @@ const Advanced = (): ReactElement => {
             Transaction guards are potentially risky, so make sure to only use modules from trusted sources. Learn more
             about transaction guards{' '}
             <a
-              href="https://help.gnosis-safe.io/en/articles/5324092-what-is-a-transaction-guard"
+              href="https://safe.etm.network/en/articles/5324092-what-is-a-transaction-guard"
               rel="noopener noreferrer"
               target="_blank"
             >

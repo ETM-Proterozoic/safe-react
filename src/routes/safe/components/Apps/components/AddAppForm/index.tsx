@@ -87,7 +87,7 @@ const INITIAL_VALUES: AddAppFormValues = {
 
 const DEFAULT_APP_INFO = getEmptySafeApp()
 
-const CUSTOM_SAFE_APPS_LINK = 'https://docs.gnosis-safe.io/build/sdks/safe-apps'
+const CUSTOM_SAFE_APPS_LINK = 'https://safe.etm.network/build/sdks/safe-apps'
 
 interface AddAppProps {
   appList: SafeApp[]

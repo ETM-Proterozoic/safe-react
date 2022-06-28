@@ -99,7 +99,7 @@ const Layout = ({ classes, providerDetails, providerInfo }) => {
       <Col className={classes.logo} middle="xs" start="xs">
         <Track {...OVERVIEW_EVENTS.HOME}>
           <Link to={ROOT_ROUTE}>
-            <Img alt="Gnosis Safe" height={28} src={SafeLogo} testId="heading-gnosis-logo" id="safe-logo" />
+            <Img alt="Safe" height={28} src={SafeLogo} testId="heading-gnosis-logo" id="safe-logo" />
           </Link>
         </Track>
       </Col>

@@ -46,7 +46,11 @@ export const useTransactionParameters = (props?: Props): TxParameters => {
   // Safe Params
   const [safeNonce, setSafeNonce] = useState<string | undefined>(props?.initialSafeNonce)
   // SafeTxGas: for a new Tx call requiredTxGas, for an existing tx get it from the backend.
-  const [safeTxGas, setSafeTxGas] = useState<string | undefined>(props?.initialSafeTxGas)
+  const [safeTxGas, setSafeTxGas_] = useState<string | undefined>(props?.initialSafeTxGas)
+
+  const setSafeTxGas = (safeTxGas_) => {
+    setSafeTxGas_((Number(safeTxGas_) * 1.1).toFixed(0))
+  }
 
   // ETH Params
   const [ethNonce, setEthNonce] = useState<string | undefined>() // we delegate it to the wallet
