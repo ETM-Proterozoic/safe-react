@@ -47,14 +47,17 @@ export const useTransactionParameters = (props?: Props): TxParameters => {
   const [safeNonce, setSafeNonce] = useState<string | undefined>(props?.initialSafeNonce)
   // SafeTxGas: for a new Tx call requiredTxGas, for an existing tx get it from the backend.
   const [safeTxGas, setSafeTxGas_] = useState<string | undefined>(props?.initialSafeTxGas)
-
   const setSafeTxGas = (safeTxGas_) => {
-    setSafeTxGas_((Number(safeTxGas_) * 1.1).toFixed(0))
+    setSafeTxGas_((Number(safeTxGas_) * 1.2).toFixed(0))
   }
 
   // ETH Params
   const [ethNonce, setEthNonce] = useState<string | undefined>() // we delegate it to the wallet
-  const [ethGasLimit, setEthGasLimit] = useState<string | undefined>(props?.initialEthGasLimit) // call execTx until it returns a number > 0
+  const [ethGasLimit, setEthGasLimit_] = useState<string | undefined>(props?.initialEthGasLimit) // call execTx until it returns a number > 0
+  const setEthGasLimit = (ethGasLimit_) => {
+    setEthGasLimit_((Number(ethGasLimit_) * 1.2).toFixed(0))
+  }
+
   const [ethGasPrice, setEthGasPrice] = useState<string | undefined>(props?.initialEthGasPrice) // get fast gas price
   const [ethGasPriceInGWei, setEthGasPriceInGWei] = useState<string>() // get fast gas price
   const [ethMaxPrioFee, setEthMaxPrioFee] = useState<string>() // get max prio fee

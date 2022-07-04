@@ -3,9 +3,9 @@ import { Grid } from '@material-ui/core'
 
 import PendingTxsList from './PendingTxs/PendingTxsList'
 import Overview from './Overview/Overview'
-import SafeApps from './SafeApps'
+// import SafeApps from './SafeApps'
 import { FeaturedApps } from './FeaturedApps/FeaturedApps'
-import MobileAppBanner from './MobileAppBanner'
+// import MobileAppBanner from './MobileAppBanner'
 import { DashboardTitle } from './styled'
 
 const Dashboard = (): ReactElement => {
@@ -17,7 +17,7 @@ const Dashboard = (): ReactElement => {
         <Overview />
       </Grid>
 
-      <MobileAppBanner />
+      {/*<MobileAppBanner />*/}
 
       <Grid item xs={12} md={6}>
         <PendingTxsList size={4} />
@@ -26,7 +26,7 @@ const Dashboard = (): ReactElement => {
       <FeaturedApps />
 
       <Grid item xs={12}>
-        <SafeApps />
+        {/*<SafeApps />*/}
       </Grid>
     </Grid>
   )

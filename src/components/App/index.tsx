@@ -26,9 +26,9 @@ const Frame = styled.div`
 
 const App: React.FC = ({ children }) => {
   const { toggleSidebar } = useContext(SafeListSidebarContext)
-  const { name: safeName, totalFiatBalance: currentSafeBalance } = useSelector(currentSafeWithNames)
+  const { name: safeName, ethBalance } = useSelector(currentSafeWithNames)
   const { safeActionsState, onShow, onHide, showSendFunds, hideSendFunds } = useSafeActions()
-  const currentCurrency = useSelector(currentCurrencySelector)
+  // const currentCurrency = useSelector(currentCurrencySelector)
   const granted = useSelector(grantedSelector)
   const sidebarItems = useSidebarItems()
   const { address: safeAddress } = useSelector(currentSafeWithNames)
@@ -37,8 +37,7 @@ const App: React.FC = ({ children }) => {
   useAddressBookSync()
 
   const sendFunds = safeActionsState.sendFunds
-  const balance = formatCurrency(currentSafeBalance.toString(), currentCurrency)
-
+  const balance = formatCurrency(ethBalance.toString(), 'ETMP') // formatCurrency(currentSafeBalance.toString(), currentCurrency)
   const onReceiveShow = () => onShow('Receive')
   const onReceiveHide = () => onHide('Receive')
 
