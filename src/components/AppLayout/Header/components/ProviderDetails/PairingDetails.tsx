@@ -3,15 +3,11 @@ import styled from 'styled-components'
 import Skeleton from '@material-ui/lab/Skeleton'
 import RefreshIcon from '@material-ui/icons/Refresh'
 import IconButton from '@material-ui/core/IconButton'
-import { Link } from '@gnosis.pm/safe-react-components'
 import QRCode from 'qrcode.react'
 
 import SafeLogo from 'src/assets/logo.svg'
 import Paragraph from 'src/components/layout/Paragraph'
 import { getPairingUri, initPairing, isPairingModule } from 'src/logic/wallets/pairing/utils'
-import { OVERVIEW_EVENTS } from 'src/utils/events/overview'
-import Track from 'src/components/Track'
-import AppstoreButton from 'src/components/AppstoreButton'
 import { Divider } from '@material-ui/core'
 
 const QR_DIMENSION = 120
@@ -95,17 +91,11 @@ const PairingDetails = ({ vertical = false }: PairingDetailsProps): ReactElement
     <StyledContent>
       <Paragraph size="sm">
         Scan this code in the Gnosis Safe mobile app to sign transactions with your mobile device.{' '}
-        <Link href="https://help.gnosis-safe.io/en/articles/5584901-desktop-pairing">
-          Learn more about this feature.
-        </Link>
-      </Paragraph>
 
-      <Track {...OVERVIEW_EVENTS.IPHONE_APP_BUTTON}>
-        <AppstoreButton placement="pairing" />
-      </Track>
+      </Paragraph>
     </StyledContent>
   )
-
+  return <div></div>
   return (
     <StyledContainer $vertical={vertical}>
       {vertical ? (

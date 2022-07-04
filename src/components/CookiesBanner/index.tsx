@@ -282,19 +282,19 @@ const CookiesBanner = isDesktop
       return (
         <>
           {/* A fake Intercom button before Intercom is loaded */}
-          {!localSupportAndUpdates && !isSafeAppView && (
-            <FakeIntercomButton onClick={() => openBanner(COOKIE_IDS.INTERCOM)} />
-          )}
+          {/*{!localSupportAndUpdates && !isSafeAppView && (*/}
+          {/*  <FakeIntercomButton onClick={() => openBanner(COOKIE_IDS.INTERCOM)} />*/}
+          {/*)}*/}
 
-          {/* The cookie banner itself */}
-          {cookieBannerOpen && (
-            <CookiesBannerForm
-              cookiesNecessary={localNecessary}
-              cookiesSupportAndUpdates={localSupportAndUpdates}
-              cookiesAnalytics={localAnalytics}
-              onSubmit={acceptCookiesHandler}
-            />
-          )}
+          {/*/!* The cookie banner itself *!/*/}
+          {/*{cookieBannerOpen && (*/}
+          {/*  <CookiesBannerForm*/}
+          {/*    cookiesNecessary={localNecessary}*/}
+          {/*    cookiesSupportAndUpdates={localSupportAndUpdates}*/}
+          {/*    cookiesAnalytics={localAnalytics}*/}
+          {/*    onSubmit={acceptCookiesHandler}*/}
+          {/*  />*/}
+          {/*)}*/}
         </>
       )
     }
